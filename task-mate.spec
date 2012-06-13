@@ -1,7 +1,7 @@
 Summary:	Metapackage for MATE desktop environment
 Name:		task-mate
 Version:	1.2.0
-Release:	1
+Release:	2
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
 BuildArch:	noarch
@@ -17,8 +17,12 @@ Requires:	mate-conf-editor
 Requires:	mate-dialogs
 # should be engrampa
 Requires:	mate-file-archiver
+Requires:	mate-file-manager-gksu
+Requires:	mate-file-manager-image-converter
+Requires:	mate-file-manager-open-terminal
 # should be eom
 Requires:	mate-image-viewer
+Requires:	mate-indicator-applet
 Requires:	mate-keyring
 Requires:	mate-media
 Requires:	mate-netspeed
@@ -32,10 +36,17 @@ Requires:	mate-text-editor
 Requires:	mate-terminal
 Requires:	mate-utils
 Requires:	mozo
+Requires:	python-mate-desktop
+Requires:	python-mate-keyring
+Requires:	python-mate-marco
+Requires:	python-mate-wnck
+Requires:	python-matevfs
 #Suggests:	caja-filesharing
 #Suggests:	caja-sendto-evolution
 #Suggests:	gucharmap
 Suggests:	gdm-220
+Suggests:	mate-file-manager-sendto-pidgin
+Suggests:	mate-file-manager-sendto-upnp
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
@@ -45,6 +56,7 @@ dependencies for running the MATE.
 Summary:	Minimal dependencies needed for MATE desktop 
 Group:		Graphical desktop/GNOME
 
+Requires:	mate-backgrounds
 Requires:	mate-control-center
 # should be caja
 Requires:	mate-file-manager
