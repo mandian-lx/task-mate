@@ -1,52 +1,52 @@
 Summary:	Metapackage for MATE desktop environment
 Name:		task-mate
-Version:	1.2.0
-Release:	2
+Version:	1.4.0
+Release:	1
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
 BuildArch:	noarch
 
-Requires:	%{name}-minimal
-Requires:	atril
-Requires:	caja-sendto-bluetooth
-Requires:	ffmpegthumbnailer-caja
-Requires:	mate-applets
-Requires:	mate-bluetooth
-Requires:	mate-calc
-Requires:	mate-conf-editor
-Requires:	mate-dialogs
+Requires:	%{name}-minimal >= %{version}
+Requires:	atril >= %{version}
+Requires:	caja-sendto-bluetooth >= %{version}
+Requires:	ffmpegthumbnailer-caja >= %{version}
+Requires:	mate-applets >= %{version}
+Requires:	mate-bluetooth >= %{version}
+Requires:	mate-calc >= %{version}
+Requires:	mate-conf-editor >= %{version}
+Requires:	mate-dialogs >= %{version}
 # should be engrampa
-Requires:	mate-file-archiver
-Requires:	mate-file-manager-gksu
-Requires:	mate-file-manager-image-converter
-Requires:	mate-file-manager-open-terminal
+Requires:	mate-file-archiver >= %{version}
+Requires:	mate-file-manager-gksu >= %{version}
+Requires:	mate-file-manager-image-converter >= %{version}
+Requires:	mate-file-manager-open-terminal >= %{version}
 # should be eom
-Requires:	mate-image-viewer
-Requires:	mate-indicator-applet
-Requires:	mate-keyring
-Requires:	mate-media
-Requires:	mate-netspeed
-Requires:	mate-notification-daemon
-Requires:	mate-screensaver
-Requires:	mate-sensors-applet
-Requires:	mate-system-monitor
-Requires:	mate-system-tools
+Requires:	mate-image-viewer >= %{version}
+Requires:	mate-indicator-applet >= %{version}
+Requires:	mate-keyring >= %{version}
+Requires:	mate-media >= %{version}
+Requires:	mate-netspeed >= %{version}
+Requires:	mate-notification-daemon >= %{version}
+Requires:	mate-screensaver >= %{version}
+Requires:	mate-sensors-applet >= %{version}
+Requires:	mate-system-monitor >= %{version}
+Requires:	mate-system-tools >= %{version}
 # should be pluma
-Requires:	mate-text-editor
-Requires:	mate-terminal
-Requires:	mate-utils
-Requires:	mozo
-Requires:	python-mate-desktop
-Requires:	python-mate-keyring
-Requires:	python-mate-marco
-Requires:	python-mate-wnck
-Requires:	python-matevfs
+Requires:	mate-text-editor >= %{version}
+Requires:	mate-terminal >= %{version}
+Requires:	mate-utils >= %{version}
+Requires:	mozo >= %{version}
+#Requires:	python-mate-desktop >= %{version}
+#Requires:	python-mate-keyring >= %{version}
+#Requires:	python-mate-marco >= %{version}
+#Requires:	python-mate-wnck >= %{version}
+#Requires:	python-matevfs >= %{version}
 #Suggests:	caja-filesharing
 #Suggests:	caja-sendto-evolution
 #Suggests:	gucharmap
 Suggests:	gdm-220
-Suggests:	mate-file-manager-sendto-pidgin
-Suggests:	mate-file-manager-sendto-upnp
+Suggests:	mate-file-manager-sendto-pidginl >= %{version}
+Suggests:	mate-file-manager-sendto-upnpl >= %{version}
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
@@ -79,4 +79,15 @@ minimal dependencies for running a minimal MATE desktop environment.
 
 %files minimal
 
+
+
+
+%changelog
+* Wed Jun 13 2012 Matthew Dawkins <mattydaw@mandriva.org> 1.2.0-2
++ Revision: 805484
+- rebuild adding more requires for functionality
+
+* Fri Jun 08 2012 Matthew Dawkins <mattydaw@mandriva.org> 1.2.0-1
++ Revision: 803437
+- imported package task-mate
 
