@@ -1,7 +1,7 @@
 Summary:	Metapackage for MATE desktop environment
 Name:		task-mate
 Version:	1.8.0
-Release:	1
+Release:	2
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
 BuildArch:	noarch
@@ -26,7 +26,8 @@ Requires:	pluma >= %{version}
 Requires:	mate-terminal >= %{version}
 Requires:	mate-utils >= %{version}
 Requires:	mozo >= %{version}
-Suggests:	lightdm
+Requires:	lightdm-gtk2-greeter
+Requires:	lightdm
 #Suggests:	mate-file-manager-sendto-pidgin >= %{version}
 #Suggests:	mate-file-manager-sendto-upnpl >= %{version}
 
