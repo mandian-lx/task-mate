@@ -39,9 +39,11 @@ dependencies for running the MATE.
 Summary:	Minimal dependencies needed for MATE desktop 
 Group:		Graphical desktop/GNOME
 
+Requires:	caja >= %{version}
+# MD mate made the switch, this really should be pulled by each pkg contains gschemas
+Requires:	gsettings-desktop-schemas
 Requires:	mate-backgrounds >= %{version}
 Requires:	mate-control-center >= %{version}
-Requires:	caja >= %{version}
 Requires:	mate-icon-theme >= %{version}
 Requires:	mate-notification-daemon >= %{version}
 Requires:	mate-panel >= %{version}
