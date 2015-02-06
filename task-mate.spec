@@ -1,7 +1,7 @@
 Summary:	Metapackage for MATE desktop environment
 Name:		task-mate
 Version:	1.8.0
-Release:	2
+Release:	3
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
 BuildArch:	noarch
