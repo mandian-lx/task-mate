@@ -9,9 +9,7 @@ BuildArch:	noarch
 Requires:	%{name}-minimal >= %{version}
 Requires:	atril >= %{version}
 Requires:	mate-applets >= %{version}
-Requires:	mate-calc >= %{version}
 Requires:	dconf-editor
-Requires:	mate-dialogs >= %{version}
 Requires:	engrampa >= %{version}
 Requires:	eom >= %{version}
 Requires:	mate-indicator-applet >= %{version}
