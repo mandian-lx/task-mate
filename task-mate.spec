@@ -1,7 +1,7 @@
 Summary:	Metapackage for MATE desktop environment
 Name:		task-mate
-Version:	1.8.0
-Release:	3
+Version:	1.14.0
+Release:	1
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
 BuildArch:	noarch
@@ -9,24 +9,21 @@ BuildArch:	noarch
 Requires:	%{name}-minimal >= %{version}
 Requires:	atril >= %{version}
 Requires:	mate-applets >= %{version}
-Requires:	mate-calc >= %{version}
 Requires:	dconf-editor
-Requires:	mate-dialogs >= %{version}
 Requires:	engrampa >= %{version}
 Requires:	eom >= %{version}
 Requires:	mate-indicator-applet >= %{version}
 Requires:	gnome-keyring >= %{version}
 Requires:	mate-media >= %{version}
-Requires:	mate-netspeed >= %{version}
+Requires:	matemixer-backend-pulse >= %{version}
 Requires:	mate-screensaver >= %{version}
 Requires:	mate-sensors-applet >= %{version}
 Requires:	mate-system-monitor >= %{version}
-Requires:	mate-system-tools >= %{version}
 Requires:	pluma >= %{version}
 Requires:	mate-terminal >= %{version}
 Requires:	mate-utils >= %{version}
 Requires:	mozo >= %{version}
-Requires:	lightdm-gtk2-greeter
+Requires:	lightdm-gtk3-greeter
 Requires:	lightdm
 #Suggests:	mate-file-manager-sendto-pidgin >= %{version}
 #Suggests:	mate-file-manager-sendto-upnpl >= %{version}
@@ -50,12 +47,11 @@ Requires:	mate-panel >= %{version}
 Requires:	mate-polkit >= %{version}
 Requires:	mate-power-manager >= %{version}
 Requires:	mate-session-manager >= %{version}
-Requires:	mate-themes >= %{version}
 Requires:	marco >= %{version}
 Requires:	preload
 Requires:	task-pulseaudio
 Requires:	task-x11
-Requires:	libwnck
+Requires:	libwnck3
 
 %description minimal
 This package is a meta-package, meaning that its purpose is to contain
