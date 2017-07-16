@@ -55,7 +55,7 @@ Requires:	mate-power-manager >= %{version}
 Requires:	mate-session-manager >= %{version}
 Requires:	mate-themes >= 3.22 #%{version}
 Requires:	marco >= %{version}
-#Requires:	openmandriva-mate-config  >= %{version}
+Requires:	openmandriva-mate-config >= %{version}
 Requires:	preload
 Requires:	task-pulseaudio
 Requires:	task-x11
